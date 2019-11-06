@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import './App.css';
-import loading from './loading'
+import confirm from './confirm'
 import InputNumber from './InputNumber'
 
 
 
-class App extends React.Component{
+class App extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -23,13 +23,13 @@ class App extends React.Component{
   }
   
   componentDidMount() {
-    loading.show()
+    confirm.show()
     setTimeout(()=>{
       this.setState({
-        value:['a','b','c'],
+        value:'hello world',
       })
-      loading.hide()
-    },200)
+      confirm.hide()
+    },2000)
   }
 }
 

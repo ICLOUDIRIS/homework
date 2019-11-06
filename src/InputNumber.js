@@ -51,7 +51,7 @@ onChange(value) {
         <input value={this.state.value} onChange={e => this.handleChange(e)}  ref={ref => this.input = ref} />
                 <button onClick={() => this.plus()}>+</button>
                 <br/>
-               输入值： 1-100
+                输入值： 1-100 ,并+1
 			</div>
 		);
 	}
